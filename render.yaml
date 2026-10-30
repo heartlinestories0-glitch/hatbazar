@@ -1,0 +1,25 @@
+services:
+  - type: web
+    name: hatbazar
+    runtime: node
+    plan: free
+    buildCommand: "echo no build step"
+    startCommand: npm start
+    healthCheckPath: /api/config
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: ADMIN_EMAIL
+        sync: false
+      - key: ADMIN_PASSWORD
+        sync: false
+      - key: BKASH_NUMBER
+        sync: false
+      - key: SESSION_SECRET
+        generateValue: true
+    # স্থায়ী ডিস্ক (পেইড প্ল্যান লাগে)। চালু করতে plan বদলে নিচের অংশের # তুলে দিন:
+    #   DATA_DIR ভেরিয়েবলও /var/data দিন।
+    # disk:
+    #   name: shop-data
+    #   mountPath: /var/data
+    #   sizeGB: 1

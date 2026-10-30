@@ -1,0 +1,12 @@
+{
+  "name": "hatbazar-shop",
+  "version": "1.0.0",
+  "description": "হাটবাজার: বাংলা অনলাইন শপ (কোনো বাইরের প্যাকেজ ছাড়া)",
+  "main": "server.js",
+  "private": true,
+  "engines": { "node": ">=22.13" },
+  "scripts": {
+    "start": "node --disable-warning=ExperimentalWarning server.js",
+    "test": "node --disable-warning=ExperimentalWarning test.js"
+  }
+}

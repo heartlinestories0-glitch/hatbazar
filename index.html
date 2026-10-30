@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>হাটবাজার - দেশের অনলাইন বাজার</title>
+<meta name="description" content="ইলেকট্রনিক্স, ফ্যাশন, মুদি ও আরও অনেক কিছু। সারা বাংলাদেশে ক্যাশ অন ডেলিভারি।">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@600;800&family=Hind+Siliguri:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="#/">হাটবাজার <small>দেশের অনলাইন বাজার</small></a>
+    <form class="search" id="searchForm" role="search">
+      <label for="catSel" hidden>বিভাগ</label>
+      <select id="catSel"></select>
+      <label for="q" hidden>পণ্য খুঁজুন</label>
+      <input id="q" type="search" placeholder="পণ্য খুঁজুন, যেমন: চাল, ইয়ারবাড, শাড়ি" autocomplete="off">
+      <button type="submit">খুঁজুন</button>
+    </form>
+    <nav class="acct" id="acct" aria-label="অ্যাকাউন্ট"></nav>
+    <button class="cartbtn" id="openCart" type="button" aria-label="কার্ট খুলুন">কার্ট <b id="count">0</b></button>
+  </div>
+</header>
+<main class="wrap" id="view"></main>
+<div id="layer"></div>
+<div id="toastBox" aria-live="polite"></div>
+<script src="/app.js"></script>
+</body>
+</html>
